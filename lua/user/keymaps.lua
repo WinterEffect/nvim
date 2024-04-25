@@ -16,7 +16,7 @@ map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
 -- Toggling left file explorer
-map("n", "<leader>e", ":Lex 30<CR>", opts)
+map("n", "<leader>e", ":Neotree filesystem reveal left<CR>", opts)
 
 -- Spliting windows
 map("n", "<leader>v", ":vsplit<CR>", opts)
@@ -63,8 +63,6 @@ map("v", "p", "_dP", opts)
 -- Exiting the terminal
 map("t", "<A-c>", "<C-\\><C-n>", { silent = true })
 
-
-
-
+ 
 
 
