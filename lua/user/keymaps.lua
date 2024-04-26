@@ -15,8 +15,10 @@ map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
--- Toggling left file explorer
-map("n", "<leader>e", ":Neotree filesystem reveal left<CR>", opts)
+-- Toggling Neotree windows
+map("n", "<leader>e", ":Neotree filesystem reveal left toggle<CR>", opts)
+map("n", "<leader>ss", ":Neotree git_status left toggle<CR>", opts)
+map("n", "<leader>sb", ":Neotree buffers left toggle<CR>", opts)
 
 -- Spliting windows
 map("n", "<leader>v", ":vsplit<CR>", opts)
