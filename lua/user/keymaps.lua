@@ -42,7 +42,8 @@ map("n", "<leader>c", ":quit<CR>", opts)
 -- Saving
 map("n", "<leader>w", ":write | quit<CR>", opts)
 
-
+-- disabling highlight after search
+map("n","<leader>nh",":nohlsearch<CR>",opts)
 -- Insert mode keybinds --
 -- going out to Normal mode using Alt + j
 map("i", "<A-j>", "<ESC>", opts)
@@ -50,8 +51,8 @@ map("i", "<A-j>", "<ESC>", opts)
 
 -- Visual mode keybinds --
 -- Stay in indent mode 
-map("v", "<", "<gv", opts)
-map("v", ">", ">gv", opts)
+map("v", ",", "<gv", opts)
+map("v", ".", ">gv", opts)
 
 -- Move a block of text up and down
 map("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
