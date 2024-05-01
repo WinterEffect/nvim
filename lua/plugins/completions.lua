@@ -4,7 +4,7 @@ return { -- nvim-cmp uses luasnip for completion and luasnip uses cmp_luasnip fo
     },
     {
         "L3MON4D3/LuaSnip",
-        dependencies = { 
+        dependencies = {
             "saadparwaiz1/cmp_luasnip",  -- the completion engine
             "rafamadriz/friendly-snippets" -- vscode like snippits collection
         }
