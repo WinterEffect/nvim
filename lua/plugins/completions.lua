@@ -1,5 +1,8 @@
 return { -- nvim-cmp uses luasnip for completion and luasnip uses cmp_luasnip for completion
     {
+        "hrsh7th/cmp-nvim-lsp" -- for lsp snippits
+    },
+    {
         "L3MON4D3/LuaSnip",
         dependencies = { 
             "saadparwaiz1/cmp_luasnip",  -- the completion engine
@@ -31,7 +34,7 @@ return { -- nvim-cmp uses luasnip for completion and luasnip uses cmp_luasnip fo
                   ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
                 }),
                 sources = cmp.config.sources({
-                  -- { name = 'nvim_lsp' },
+                  { name = 'nvim_lsp' }, -- for lsp based completions
                   { name = 'luasnip' }, -- For luasnip users.
                 }, {
                   { name = 'buffer' },
