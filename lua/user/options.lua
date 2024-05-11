@@ -26,6 +26,8 @@ vim.opt.cmdheight = 2             -- set the height of the command window
 vim.opt.pumheight = 10            -- popup menu height
 vim.opt.showtabline = 4           -- show tabs in the editor
 vim.opt.updatetime = 300          -- time in ms to update the editor
-
-
-
+vim.opt.foldenable = true         -- enables folding
+-- vim.opt.foldmethod = "indent"     -- fold the code blocks based on the indentationA
+vim.opt.foldlevel = 99            -- fold level is how meny levels not to fold by default
+vim.opt.foldcolumn = "1"          -- the width of the fold lines on the left bar
+vim.opt.foldlevelstart = 99       -- 
