@@ -29,5 +29,5 @@ vim.opt.updatetime = 300          -- time in ms to update the editor
 vim.opt.foldenable = true         -- enables folding
 -- vim.opt.foldmethod = "indent"     -- fold the code blocks based on the indentationA
 vim.opt.foldlevel = 99            -- fold level is how meny levels not to fold by default
-vim.opt.foldcolumn = "1"          -- the width of the fold lines on the left bar
+vim.opt.foldcolumn = "0"          -- the width of the fold lines on the left bar
 vim.opt.foldlevelstart = 99       -- 
