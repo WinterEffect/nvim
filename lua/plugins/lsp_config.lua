@@ -17,7 +17,9 @@ return {
 					"cssls",
                     "cmake",
                     "autotools_ls",
-                    "neocmake",
+                    "bashls",
+                    "nil_ls",
+                    "rnix",
 				},
 			})
 		end,
@@ -49,10 +51,15 @@ return {
             lspconfig.cmake.setup({
 				capabilities = capabilities,
 			})
-            lspconfig.neocmake.setup({
+            lspconfig.bashls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.nil_ls.setup({
 				capabilities = capabilities,
 			})
-
+            lspconfig.rnix.setup({
+                capabilities = capabilities,
+            })
 			-- keybinds for lsp integretion when lsp is attached to buffer
 			vim.api.nvim_create_autocmd("LspAttach", {
 				callback = function()
